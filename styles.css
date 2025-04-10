@@ -20,7 +20,7 @@ body {
 .sidebar {
     position: relative;
     flex: 0 0 35%;
-    background-image: url('sunflowers2.jpg');
+    background-image: url('sunflowers2.JPG');
     background-size: cover;
     background-position: center;
 }
