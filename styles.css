@@ -1,0 +1,145 @@
+:root {
+    --petals: rgba(255, 187, 0, 0.849);
+    --core: rgb(218, 129, 28);
+    --stem: rgb(6, 83, 6);
+    --transparent-background: rgba(0, 0, 0, 0.225);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.sidebar {
+    position: relative;
+    flex: 0 0 35%;
+    background-image: url('sunflowers2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    top: 19%;
+    height: 15%;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    background-color: var(--transparent-background);
+    
+}
+
+.logo img {
+    height: 100px;
+    color: white;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: var(--transparent-background);
+}
+
+.photo-credit a {
+    color: white;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    text-wrap: wrap;
+    position: relative;
+}
+
+.header > div {
+    position: absolute;
+    bottom: 45px;
+    width: 75%;
+}
+
+.header, .footer {
+    flex: 1;
+    background-color: var(--petals);
+}
+
+.main > div {
+    padding: 45px;
+}
+
+.form {
+    flex: 0.9;
+    display: flex;
+    box-shadow: 0px 5px 5px;
+}
+
+legend {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: none;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+input {
+    border: 1px solid var(--petals);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--stem);
+    box-shadow: 3px 3px 3px rgba(6, 83, 6, 0.5);
+}
+
+.footer a {
+    color: var(--stem);
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+button {
+    background-color: var(--core);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 50px;
+    border-radius: 10px;
+    border: none;
+}
